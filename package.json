@@ -21,5 +21,8 @@
   "homepage": "https://github.com/Sayuri/smitrpz#readme",
   "dependencies": {
     "less": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.5"
   }
 }

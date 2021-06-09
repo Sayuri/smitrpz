@@ -165,3 +165,28 @@ footer {
 .tab-content {
   min-height: calc(100vh - 121px);
 }
+
+.yellow-text {
+  color: #ff8c00;
+}
+
+.armor-square {
+  width: 4px;
+  height: 4px;
+  margin-right: 1px;
+  background-color: #1BC98E;
+}
+
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-label {
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+}

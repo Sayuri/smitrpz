@@ -47,6 +47,10 @@
             <a class="nav-link text-dark" id="less-tab" data-toggle="tab" href="#less" role="tab"
                aria-controls="less" aria-selected="false">LESS</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" id="typescript-tab" data-toggle="tab" href="#typescript" role="tab"
+               aria-controls="typescript" aria-selected="false">TypeScript</a>
+          </li>
         </ul>
 
         <ul class="nav  ml-auto">
@@ -363,15 +367,65 @@
 
     </div>
 
+    <!-- tab 6 -->
+
+    <div class="tab-pane" id="typescript" role="tabpanel" aria-labelledby="typescript-tab">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-md-4 col-lg-3 col-xl-3 border bg-light">
+            <h4 class="p-1">Фильтры:</h4>
+            <div id="myTools">
+            </div>
+            <h4>Корзина:</h4>
+            <p id="myBasket">В данный момент в корзина пустая</p>
+          </div>
+          <div class="col-md-8 col-lg-9 col-xl-9 border">
+            <h4 class="text-center p-1">Каталог товаров:</h4>
+            <div class="container">
+              <div class="row" id="rowts">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 </div>
+
+<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title  m-1">Купить этот товар?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <form>
+            <label>Есть <span id="in-stock-label"></span></label>
+            <label for="inputquantity">Сколько нужно?</label>
+            <input type="text" class="form-control" id="inputquantity" placeholder="Целые числа" value="1">
+            <small id="modlalMessag" class="form-text text-muted"></small>
+            <button type="button" id="modlalBtn" class="btn btn-primary my-3" value="1" onclick=myByBtn(this.value)>
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title m-1" id="exampleModalLabel">Авторизация на сайте</h5>
+        <h5 class="modal-title m-1">Авторизация на сайте</h5>
         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -430,6 +484,7 @@
   var Theme_number = 1;
   var Default_theme = 1;
   var Ext = "less";
+
   //var Ext = "css";
 
   function getUrl(num) {
@@ -469,6 +524,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="ts/script.js"></script>
 
 </body>
 </html>

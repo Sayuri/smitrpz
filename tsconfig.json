@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "outDir": "js",
+    "sourceMap": true,
+    "outFile": "ts/script.js",
+    "lib": ["dom", "es2017"]
+  },
+  "compileOnSave": true
+}
