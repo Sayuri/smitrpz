@@ -1,0 +1,25 @@
+{
+  "name": "demianenko-smitrpz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sayuri/smitrpz.git"
+  },
+  "author": "Iuliia Demianenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sayuri/smitrpz/issues"
+  },
+  "homepage": "https://github.com/Sayuri/smitrpz#readme",
+  "dependencies": {
+    "less": "^4.1.1"
+  }
+}
