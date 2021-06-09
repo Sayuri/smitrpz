@@ -45,7 +45,7 @@ body {
   font-family: 'Arial', serif;
   color: #626262;
   overflow-y: scroll;
-  background: url('/img/herringbone.png') repeat;
+  background: url('../img/herringbone.png') repeat;
 }
 
 img {
